@@ -1,0 +1,15 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+<suite name="Classlari calıstırma">
+
+    <test name="İstenen class'lari calostırma">
+
+        <classes>
+            
+            <class name="TEST.day15_SoftAssert.C01_SoftAssert"></class>
+           <class name="TEST.day16_SmokeTest.C01_PozitifLoginTest"></class>
+            
+        </classes>
+
+    </test>
+
+</suite>

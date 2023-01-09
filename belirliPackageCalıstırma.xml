@@ -1,0 +1,29 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+<suite name="Classları calostırma">
+    <!-- Methodlari secerken bir class icerisindeki
+    - ozellikle belirtmek istediklerimizi "include"
+    ozellikle calıstırırlmayacak olanları belirtmek için "exclude" methodları kullanılır
+    -->
+
+    <test name="Belirli methodlari calıstırma">
+        
+        <classes>
+            <class name="TEST.day16_SmokeTest.C02_NegatifLoginTest">
+                <methods>
+                   <!-- day16_SmokeTest.C02_NegatifLoginTest icerisinde istediğimiz methodu callıstırma içim
+                 -->
+                    <include name="yanlisPassword"></include>
+                </methods>
+            </class>
+           <class name="TEST.day16_SmokeTest.C02_NegatifLoginTest">
+             <!-- day 16 packageindeki negatif login clasındaki yanşıs email dizisindeki
+             tüm methodları valıstıral için
+             -->
+              <methods>
+                  <exclude name="yanlisEmailTesti"></exclude>
+              </methods> 
+           </class> 
+        </classes>
+    </test>
+    
+</suite>
